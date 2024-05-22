@@ -136,6 +136,7 @@ class RecipeCard extends HTMLElement {
 		//           do not nest an <article> inside another <article>). You should use template
 		//           literals (template strings) and element.innerHTML for this.
 		// 			 Do NOT include the <article> tags within the innerHTML of the element you create.
+		//need to do an edgecase check to see if the star rating is not provided. 
 		articleElement.innerHTML = `
 			<img src="${data.imgSrc}" alt="${data.imgAlt}">
 			<p class="title">

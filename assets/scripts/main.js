@@ -87,6 +87,7 @@ function initFormHandler() {
 		let recipes = getRecipesFromStorage();
 		recipes.push(recipeObject);
 		saveRecipesToStorage(recipes); //update the recipes array and push to local storage
+		formElement.reset(); //reset the form after submission
 	});
 	// Steps B4-B9 will occur inside the event listener from step B3
 	// B4. TODO - Create a new FormData object from the <form> element reference above
